@@ -1,0 +1,145 @@
+/* Import Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Asap:wght@500&display=swap');
+
+/* CSS Reset */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* -------------- Header ---------------- */
+header{
+    background-color: white;
+    padding: 20px;
+}
+
+header h1{
+    font-family: 'Asap', sans-serif;
+    text-align: center;
+    font-size: 40px;
+}
+
+/* -------------- Body ---------------- */
+body{
+    background-color: rgb(40, 39, 68);
+}
+
+/* -------------- Score Board ---------------- */
+.score-board{
+    border: 2px solid white;
+    border-radius: 4px;
+    width: 200px;
+    margin: 20px auto;
+    padding: 10px 15px;
+    color: white;
+    font-family: 'Asap', sans-serif;
+    font-size: 40px;
+    text-align: center;
+
+    /* This will make the positioning of the absolute position child elements start from the top-left of score-board */
+    position: relative;
+}
+
+.badge{
+    background-color: rgb(253, 65, 93);
+    border: 2px solid rgb(253, 65, 93);
+    border-radius: 4px;
+    font-size: 20px;
+    padding: 2px 4px;
+}
+
+#user-label{
+    position: absolute;
+    top: 18px;
+    left: -28px;
+}
+
+#comp-label{
+    position: absolute;
+    top: 17px;
+    right: -34px;
+}
+
+/* -------------- Result ---------------- */
+.result{
+    color: white;
+    font-family: 'Asap', sans-serif;
+    font-size: 35px;
+    text-align: center;
+}
+
+/* -------------- Choices ---------------- */
+
+.choices{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0px 5px 0px;
+}
+
+.choice{
+    margin: 10px 10px 2px 10px;
+    cursor: pointer;
+    filter: grayscale(100%);
+    transition: all 0.3s ease;
+}
+
+.choice:hover{
+    filter: none;
+}
+
+.choice img{
+    width: 100px;
+}
+
+#action-message{
+    color: white;
+    font-family: 'Asap', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    margin: 0px 0px 20px 0px;
+}
+
+/* -------------- Reset ------------- */
+
+#reset{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+}
+
+#btn{
+    background-color: rgb(253, 65, 93);
+    border: 2px solid rgb(253, 65, 93);
+    color: white;
+    border-radius: 6px;
+    font-family: 'Asap', sans-serif;
+    font-size: 20px;
+    padding: 2px 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#btn:hover{
+    background-color: rgb(65, 99, 253);
+    border: 2px solid rgb(65, 99, 253);
+}
+
+/* -------------- Utility Functions --------- */
+
+.green-glow{
+    border: 2px solid lime;
+    box-shadow: 0px 0px 10px lime;
+}
+
+.red-glow{
+    border: 2px solid red;
+    box-shadow: 0px 0px 10px red;
+}
+
+.yellow-glow{
+    border: 2px solid yellow;
+    box-shadow: 0px 0px 10px yellow;
+}

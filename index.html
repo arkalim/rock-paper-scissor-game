@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissor Game</title>
+
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Rock Paper Scissor</h1>
+    </header>
+
+    <div class="score-board">
+        <div class="badge" id="user-label">User</div>
+        <div class="badge" id="comp-label">Comp</div>
+
+        <!-- We use span for the scores because they are inline elements -->
+        <span id="user-score">0</span>:<span id="comp-score">0</span>
+    </div>
+
+    <div class="result">
+        <p>Paper covers rock. Rock breaks Scissors. Scissors cut Paper.</p>
+    </div>
+
+    <div class="choices">
+        <div class="choice" id="rock">
+            <img src="img/rock.png" alt="">
+        </div>
+        <div class="choice" id="paper">
+            <img src="img/paper.png" alt="">
+        </div>
+        <div class="choice" id="scissors">
+            <img src="img/scissors.png" alt="">
+        </div>
+    </div>
+
+    <p id="action-message">Make your move.</p>
+
+    <div id="reset">
+        <button id="btn">Reset</button>
+    </div>
+
+    <!-- Add the JS right before the body tag ends -->
+    <script src="app.js"></script>
+</body>
+</html>
